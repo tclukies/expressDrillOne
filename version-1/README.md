@@ -13,43 +13,6 @@ Copying the data from the included `.csv` dataset:
 
 * Your server should include appropriate CORS headers
 
-## Examples
+## Deployed Link!!!!
+https://glacial-lowlands-43742.herokuapp.com/
 
-Your returned data list should look like this:
-
-```
-{
-    data: [{
-        "id": 1,
-        "firstAttribute": "firstValue",
-        "secondAttribute": "secondValue"
-    },{
-        "id": 2,
-        "firstAttribute": "firstValue",
-        "secondAttribute": "secondValue"
-    }]
-}
-```
-
-Your returned data item should look like this:
-
-```
-{
-    data: {
-        "id": 1,
-        "firstAttribute": "firstValue",
-        "secondAttribute": "secondValue"
-    }
-}
-```
-
-Your returned error should look like this:
-
-```
-{
-    error: {
-        "message": "No record found!"
-    }
-}
-```
-Submit your deployed server [here](yourlink)
