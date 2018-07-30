@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/:id", (req, res) => {
-    var record = findById(cohorts, req.params.id);
+    var record = findById(data, req.params.id);
     if (!record) {
         res.status(404).json({
             error: {
@@ -32,6 +32,19 @@ app.get("/:id", (req, res) => {
         res.json({ data: record });
     }
 });
+
+// app.get("/:id", function (request, response) {
+//     var record = findById(data, request.params.id);
+//     if (!record){
+//         response.status(404).json({
+//             error: {
+//                 message: "No record found!"
+//             }
+//         });
+//     } else {
+//         response.json({data: record});
+//     }
+// });
 
 app.listen(port, () => {
     console.log("listening on port", port);
