@@ -9,7 +9,7 @@ app.use(cors());
 
 function findById(data, id) {
     for (let i = 0; i < data.length; i++) {
-        let holder = data[i].ID.toString();
+        let holder = data[i].id.toString();
         if (holder === id) {
             return data[i];
         }
