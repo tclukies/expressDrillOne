@@ -23,8 +23,7 @@ app.get("/", (req, res) => {
 app.get("/:id", (req, res) => {
     var record = findById(cohorts, req.params.id);
     if (!record) {
-        res.status = 404;
-        res.json({
+        res.status(404).json({
             error: {
                 message: "No record found!"
             }
