@@ -33,19 +33,6 @@ app.get("/:id", (req, res) => {
     }
 });
 
-// app.get("/:id", function (request, response) {
-//     var record = findById(data, request.params.id);
-//     if (!record){
-//         response.status(404).json({
-//             error: {
-//                 message: "No record found!"
-//             }
-//         });
-//     } else {
-//         response.json({data: record});
-//     }
-// });
-
 app.listen(port, () => {
     console.log("listening on port", port);
 });
